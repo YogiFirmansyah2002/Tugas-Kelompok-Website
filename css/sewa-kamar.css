@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	background-image: url(../img/background.jpg);
+}
+
+main {
+	max-width: 700px;
+	width: 100%;
+	background: #fff;
+	padding: 25px 30px;
+	border-radius: 5px;
+}
+
+h1 {
+	font-size: 25px;
+	font-weight: bold;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+h1::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 30px;
+	background: skyblue;
+}
+
+.btn-hitung {
+	height: 45px;
+	width: 65px;
+	font-weight: bold;
+	background: skyblue;
+	color: #333;
+	border:0px;
+	border-radius: 5px;
+	margin: 10px;
+}
+
+.btn-back a {
+	display: inline-block;
+	background: red;
+	border-radius: 6px;
+	padding: 15px 30px;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #fff;
+	margin-top: 30px;
+	margin-left: 5%;
+}
+
+.btn-back a:hover {
+	background : blue;
+	transition: 1s;
+}
+
+.input-nilai {
+	border:1px solid #333;
+	width: 100%;
+	position: relative;
+	height: 30px;
+	margin: 10px;
+	text-align: left;
+}
+
+.label-total {
+	padding: 10px;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+.price-total {
+	padding-left: 100px;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+.content-table {
+	border-collapse: collapse;
+	margin: 25px 0;
+	font-size: 0.9em;
+	min-width: 400px;
+	border:1px solid skyblue;
+}
+
+.content-table tr th {
+	background-color: skyblue;
+	color: #333;
+	text-align: left;
+	font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+	padding: 12px 15px;
+}
+

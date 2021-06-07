@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Biaya Rawat Inap(OPNAME)</title>
+	<link rel="stylesheet" href="css/sewa-kamar.css">
+</head>
+<body>
+	<main>
+		<div class="form-container">
+			<div></div>
+			<div>
+				<div class="form-cari-nilai">
+					<h1>Biaya Rawat Inap (opname)</h1>
+					<table class="content-table">
+						<tr>
+							<th>*</th>
+							<th>Kelas 1</th>
+							<th>Kelas 2</th>
+							<th>Kelas 3</th>
+						</tr>
+						<tr>
+							<td>Rawat per hari</td>
+							<td>1000000</td>
+							<td>750000</td>
+							<td>500000</td>
+						</tr>
+					</table>
+					<select class="input-nilai" id="inputKamar">
+						<option>Pilihan Kamar</option>
+						<option>Kelas1</option>
+						<option>Kelas2</option>
+						<option>Kelas3</option>
+					</select>
+					<input class="input-nilai" id="inputDurasi" type="number" placeholder="Lama rawat (satuan hari)">
+					<input class="btn-hitung" type="button" value="Hitung" id="buttonHitung">
+				</div>
+			</div>
+		</div>
+		<div class="tabel-hasil">
+			<table class="answer-table">
+				<tr>
+					<td class="label-total">Total</td>
+					<td class="price-total" id="totalBayar"></td>
+				</tr>
+			</table>
+		</div>
+		<div class="btn-back">
+			<a href="menu.html">Kembali</a>
+		</div>
+	</main>
+	<script src="js/sewa-kamar.js"></script>
+</body>
+</html>
